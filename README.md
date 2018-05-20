@@ -8,5 +8,7 @@ Technologies Used:
 ------------------
 - Python 2.7
 - Keras
+- PyCA https://bitbucket.org/scicompanat/pyca.git
 - vectorMomentum https://bitbucket.org/scicompanat/vectormomentum
+
 
