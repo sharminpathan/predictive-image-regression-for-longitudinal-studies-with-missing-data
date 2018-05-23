@@ -64,9 +64,7 @@ def encoder(mode): #mode=1 for images, mode=3 for momentums
 		return 
     
 	model.fit(X1,X1,shuffle=True,validation_split=0.10,epochs=250, batch_size=100)
-	im=np.asarray(model.predict(X1[:1]))
-	imsave('inter.png',np.squeeze(im))
-
+	
 	intermediate_layer_model = Model(inputs=model.input, outputs=model.get_layer('encoder').output)
 	o1=np.asarray(intermediate_layer_model.predict(X1))
 	intermediate_layer_model.save('enc.h5')
