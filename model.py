@@ -81,7 +81,7 @@ def encoder(mode): #mode=1 for images, mode=3 for momentums
 	lstm = BatchNormalization() (lstm)
 	lstm = ConvLSTM2D(filters=64, kernel_size=(3, 3), padding='same', activation=PReLU(), return_sequences=True) (lstm)
 	lstm = BatchNormalization() (lstm)
-	lstm = ConvLSTM2D(filters=64, kernel_size=(2, 2), activation=PReLU(), padding='same') (lstm)
+	lstm = ConvLSTM2D(filters=64, kernel_size=(3, 3), activation=PReLU(), padding='same') (lstm)
 	lstm = BatchNormalization() (lstm)
 	lstm = MaxPooling2D((2,2), padding='same')(lstm)
 	lstm = Conv2D(128,(3,3), padding='same')(lstm)
