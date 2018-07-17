@@ -18,4 +18,4 @@ Execution Procedure:
 - Next, run prepareData.py from the preprocessing directory. This will prepare data ready for training.
 - Finally execute model.py to start with the training and make predictions on the test data.
 
-#### This repository contains code for "Predictive Image Regression for Longitudinal Studies with Missing Data", Conference on Medical Imaging with Deep Learning Conference, 2018.
+#### This repository contains code for "Predictive Image Regression for Longitudinal Studies with Missing Data", a publication in the Medical Imaging with Deep Learning Conference, 2018.
